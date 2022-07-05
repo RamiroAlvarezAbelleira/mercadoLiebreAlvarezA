@@ -310,6 +310,34 @@ footer p {
 /* media query para navegación en tablets */
 @media (min-width: 480px){
 
+    /*HEADER*/
+    div.burger-menu{
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 48%;
+        justify-content: space-around;
+    }
+
+    /*header nav ul li {
+        width: 100%;
+        padding: 0 8px;
+    }*/
+
+    header nav ul li a{
+        width: 100%;
+    }
+
+    /*MAIN*/
+
     main section div article {
         transition: all 600ms;
     }
@@ -332,13 +360,7 @@ footer p {
 
 
     /* Clase 13 peer-review */
-    div.burger-menu{
-        display: none;
-    }
-
-    header nav{
-        display: block;
-    }
+    
 
     /* Clase 14 - Micro desafío 1 */
     p.price{
@@ -370,6 +392,27 @@ footer p {
 
 /* media query para navegación en desktop */
 @media (min-width: 960px){
+
+    header div.top-header p {
+        width: 24%;
+    }
+
+    div.top-header {
+        padding: 0;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    header nav {
+        position: relative;
+        top: 15px;
+    }
+
+    header nav ul {
+        width: 26%;
+        margin: 0 5%;
+    }
+
     /* Clase 14 - Micro desafío 2 */
     main section div.products article{
         width: 22%;
